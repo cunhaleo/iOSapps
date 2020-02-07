@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrabalhandoComMapas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cCN-YH-kBV">
+                                <rect key="frame" x="0.0" y="293" width="414" height="583"/>
+                            </mapView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcl-mj-VLG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="yqS-SO-H0l"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Localização Atual" id="5ht-JG-fBn"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZX-Iu-J2p">
+                                <rect key="frame" x="20" y="121" width="76" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="numerolong" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMv-rH-inp">
+                                <rect key="frame" x="119" y="178" width="98" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="numerolat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOn-vp-5Jf">
+                                <rect key="frame" x="119" y="121" width="245" height="26.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bJ-C8-4d5">
+                                <rect key="frame" x="20" y="177" width="91" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Velocidade:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bM-MQ-KKC">
+                                <rect key="frame" x="17" y="231.5" width="94" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmA-Zy-yGv">
+                                <rect key="frame" x="133" y="207" width="70" height="70"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="DWJ-C3-UBg"/>
+                                    <constraint firstAttribute="width" constant="70" id="YAI-0y-cLb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.53833585236523962" green="0.57481449842453003" blue="0.38934657270065787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="cCN-YH-kBV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6Ob-sA-Fhe"/>
+                            <constraint firstItem="wmA-Zy-yGv" firstAttribute="centerX" secondItem="RMv-rH-inp" secondAttribute="centerX" id="7Zj-IQ-qf8"/>
+                            <constraint firstItem="gcl-mj-VLG" firstAttribute="leading" secondItem="cCN-YH-kBV" secondAttribute="leading" id="DsO-UW-e17"/>
+                            <constraint firstItem="WZX-Iu-J2p" firstAttribute="top" secondItem="gcl-mj-VLG" secondAttribute="bottom" constant="20" id="Flo-Ci-8Wo"/>
+                            <constraint firstItem="cCN-YH-kBV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ihq-PT-h5A"/>
+                            <constraint firstItem="WZX-Iu-J2p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MAV-sh-zNs"/>
+                            <constraint firstItem="9bJ-C8-4d5" firstAttribute="top" secondItem="WZX-Iu-J2p" secondAttribute="bottom" constant="35" id="OZo-D2-QT7"/>
+                            <constraint firstItem="gcl-mj-VLG" firstAttribute="trailing" secondItem="cCN-YH-kBV" secondAttribute="trailing" id="R1W-ma-IDH"/>
+                            <constraint firstItem="WZX-Iu-J2p" firstAttribute="leading" secondItem="9bJ-C8-4d5" secondAttribute="leading" id="Ti1-UE-vbw"/>
+                            <constraint firstAttribute="bottom" secondItem="cCN-YH-kBV" secondAttribute="bottom" constant="20" id="Vyu-u2-D5v"/>
+                            <constraint firstItem="wmA-Zy-yGv" firstAttribute="top" secondItem="RMv-rH-inp" secondAttribute="bottom" constant="8" id="Wlf-EE-f9T"/>
+                            <constraint firstItem="WZX-Iu-J2p" firstAttribute="firstBaseline" secondItem="nOn-vp-5Jf" secondAttribute="firstBaseline" id="ZwW-Wy-N6w"/>
+                            <constraint firstItem="nOn-vp-5Jf" firstAttribute="leading" secondItem="WZX-Iu-J2p" secondAttribute="trailing" constant="23" id="cGl-KV-USz"/>
+                            <constraint firstItem="gcl-mj-VLG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gL5-zP-wdP"/>
+                            <constraint firstItem="cCN-YH-kBV" firstAttribute="top" secondItem="wmA-Zy-yGv" secondAttribute="bottom" constant="16" id="nxm-4u-sZZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wmA-Zy-yGv" secondAttribute="trailing" constant="211" id="sHz-e6-Eg3"/>
+                            <constraint firstItem="wmA-Zy-yGv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="207" id="u1z-OR-NcC"/>
+                            <constraint firstItem="wmA-Zy-yGv" firstAttribute="leading" secondItem="4bM-MQ-KKC" secondAttribute="trailing" constant="22" id="vDd-aN-C5f"/>
+                            <constraint firstItem="wmA-Zy-yGv" firstAttribute="centerY" secondItem="4bM-MQ-KKC" secondAttribute="centerY" id="wtW-5O-8Qs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapa" destination="cCN-YH-kBV" id="DQI-bg-YQy"/>
+                        <outlet property="textoLatitude" destination="nOn-vp-5Jf" id="Xva-hc-kKI"/>
+                        <outlet property="textoLongitude" destination="RMv-rH-inp" id="MRn-cl-js6"/>
+                        <outlet property="velocidadeLabel" destination="wmA-Zy-yGv" id="gN0-v0-qs0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65.217391304347828" y="119.86607142857142"/>
+        </scene>
+    </scenes>
+</document>
